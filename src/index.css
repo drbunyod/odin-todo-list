@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto 3fr auto 2fr;
+    height: 100vh;
+}
+
+.container > div {
+    padding: 10px 15px;
+}
+
+.sidebar-title {
+    border-bottom: 1px solid #000000;
+    border-right: 1px solid #000000;
+}
+
+.sidebar {
+    border-bottom: 1px solid #000000;
+    border-right: 1px solid #000000;
+}
+
+.sidebar-top-title {
+    grid-row: 1 / 2;  
+}
+
+.sidebar-top {
+    grid-row: 2 / 3; 
+}
+
+.sidebar-bottom-title {
+    grid-row: 3 / 4;
+}
+
+.sidebar-bottom {
+    grid-row: 4 / 5;
+    border-bottom: none;
+}
+
+form {
+    display: grid;
+    gap: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.submit {
+    width: 50%;
+    height: 20px;
+}
+
+.main-title {
+    border-bottom: 1px solid #000000;
+}
+
+table {
+    margin-bottom: 15px;
+}
+
+table, th, td {
+    padding: 1px 10px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+th {
+    border: 1px solid;
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width: 250px;
+}
+
+td.todo-actions {
+    max-width: 20px;
+    padding: 1px 0;
+    font-size: 0.6em;
+    cursor: pointer;
+}
+
+.expand {
+    color: #aaaaaa;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.table-title {
+    border-right: none;
+}
+
+.table-delete {
+    opacity: 0.1;
+    border-left: none;
+    cursor: pointer;
+}
+
+.table-delete:hover {
+    opacity: 1;
+}
+
+.todo-priority {
+    color: #ff0000;
+}
+
+.todo-date {
+    font-size: 0.7em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.todo-description {
+    font-size: 0.7em;
+}
+
+.todo-edit {
+    color: #333333;
+}
+
+.todo-delete {
+    color: #ff0000;
+}
+
+.left-text {
+    text-align: left;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    overflow: auto;
+    z-index: 1;
+}
+
+#edit-form {
+    display: block;
+    margin: auto;
+    padding: 20px 25px;
+    width: 16%;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+}
+
+#edit-form > div {
+    margin-bottom: 5px;
+}
+
+.close-modal {
+    float: right;
+    color: #aaaaaa;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
